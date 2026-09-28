@@ -113,7 +113,11 @@ Optional additions:
 */
 .site-nav a {
     display: inline-block;
-    /* add more properties here */
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 200ms ease-in-out;
 }
 
 /* TODO (CSS #2): Hover effect
@@ -124,7 +128,7 @@ You should define what changes when the mouse hovers:
 - optionally change underline/border effect instead of background (design choice)
 */
 .site-nav a:hover {
-    /* add properties here */
+    background-color: var(--accent);
 }
 
 /* TODO (CSS #3): Active link highlight
@@ -138,7 +142,7 @@ Common approaches (choose one):
 Keep it visually consistent with your hover style.
 */
 .site-nav a.active {
-    /* add properties here */
+    background-color: var(--accent);
 }
 
 /* Two-column layout (Flexbox)
@@ -171,7 +175,10 @@ Optional:
 - slightly different background (very light tint)
 */
 .sidebar {
-    /* add properties here */
+    background: var(--white);
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
 }
 
 /* TODO (CSS #5): Card styling (Box Model)
@@ -187,7 +194,11 @@ Optional:
 - box-shadow for depth (subtle; do not overdo)
 */
 .card {
-    /* add properties here */
+    background: var(--white);
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
 }
 
 /* TODO (CSS #6): Meta line
@@ -199,7 +210,9 @@ Typical properties:
 - margin-bottom: 6px–12px
 */
 .meta {
-    /* add properties here */
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
 }
 
 /* TODO (CSS #7): Tag “pill” styling
@@ -217,7 +230,10 @@ Optional:
 */
 .tag {
     display: inline-block;
-    /* add more properties here */
+    padding: 4px 12px;
+    margin: 4px 4px 0 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
 }
 
 /* TODO (CSS #8): Video container
@@ -230,7 +246,10 @@ Typical properties:
 - background: #000 (prevents white gaps around the video)
 */
 .video-wrap {
-    /* add properties here */
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
 }
 
 .video-wrap iframe {
@@ -254,6 +273,7 @@ Goal: Use this to emphasize the featured section
 - a subtle background tint
 - a stronger border-left accent
 */
+    border: 2px solid var(--accent);
 }
 
 /* TODO (CSS #10): Notice styling
@@ -268,7 +288,11 @@ Optional:
 - slightly muted text color
 */
 .notice {
-    /* add properties here */
+    border: 1px dashed #bbb;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--white);
+    color: #555;
 }
 
 /* Footer
