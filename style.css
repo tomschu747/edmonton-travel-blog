@@ -31,12 +31,21 @@ Typical values:
     /* main text color (dark) */
     --primary: #2c3e50;
     /* header/nav background color */
-    --accent: #0A6C74;
+    --accent: #0a6c74;
     /* highlight/hover color */
     --white: #ffffff;
     /* white */
     --border: #ddd;
     /* light border color */
+}
+
+.theme-dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --primary: #111827;
+    --accent: #38bdf8;
+    --white: #111827;
+    --border: #334155;
 }
 
 /* Base styles (inheritance applies to many text properties)
@@ -117,6 +126,7 @@ Optional additions:
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 8px;
+    border-bottom: 2px solid transparent;
     transition: background-color 200ms ease-in-out;
 }
 
@@ -142,7 +152,7 @@ Common approaches (choose one):
 Keep it visually consistent with your hover style.
 */
 .site-nav a.active {
-    background-color: var(--accent);
+    background-color: rgba(255, 255, 255, 0.18);
 }
 
 /* Two-column layout (Flexbox)
