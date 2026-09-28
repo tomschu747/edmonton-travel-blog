@@ -20,6 +20,19 @@ HEADER SECTION (copy the same structure from index.html)
 - Use the SAME menu on every page for consistency
 - Only change which link has class="active" (the current page)
 -->
+        <header class="site-header">
+            <h1>Edmonton Travel Blog</h1>
+            <p>Here's what you need to know about the city.</p>
+            <!-- Navigation is a list; CSS will turn it into a nav bar -->
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="city.html">About the City</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <main class="layout">
             <section class="main">
                 <div class="card">
@@ -36,9 +49,22 @@ HEADER SECTION (copy the same structure from index.html)
                     <!-- TODO (HTML #5):
 Add a <ul> list with 4 items.
 -->
+                        <ul>
+                            <li>Exploring the river valley trails</li>
+                            <li>Visiting local cafés and restaurants</li>
+                            <li>Shopping in unique neighbourhoods</li>
+                            <li>Attending seasonal festivals and events</li>
+                        </ul>
                     <!-- TODO (HTML #6):
 Create a header stating “Best Time to Visit” and Write 2–4 sentences.
 -->
+                    <h3>Best Time to Visit</h3>
+                    <p>
+                        The best time to visit Edmonton is during the late spring and summer months when the weather is warm and outdoor activities are in full swing.
+                        During the summer, Edmonton sees long daylight hours, allowing visitors to enjoy extended time outdoors. 
+                        This is also when many festivals take place, offering a lively atmosphere. 
+                        However, winter still offers unique experiences, such as ice skating and winter festivals, for those who enjoy colder weather.
+                    </p>
                     <div class="tags">
                         <span class="tag">Parks</span>
                         <span class="tag">Festivals</span>
@@ -49,6 +75,15 @@ Create a header stating “Best Time to Visit” and Write 2–4 sentences.
 Add a second card titled “One-Day Itinerary” containing an <ol> list with
 4 steps.
 -->
+                <div class="card">
+                    <h2>One-Day Itinerary</h2>
+                    <ol>
+                        <li>Start your day with a morning walk along the river valley trails.</li>
+                        <li>Have brunch at a local café in the downtown area.</li>
+                        <li>Spend the afternoon exploring the Royal Alberta Museum or the Muttart Conservatory.</li>
+                        <li>End your day with dinner and shopping on Whyte Avenue, followed by a sunset view from a nearby park.</li>
+                    </ol>
+                </div>
             </section>
             <aside class="sidebar">
                 <div class="card">
